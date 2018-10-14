@@ -106,7 +106,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="Contact.aspx" />
+    <Content Include="ManajemenInsiden.aspx" />
     <Content Include="Content\app.css" />
     <Content Include="Content\app.min.css" />
     <Content Include="Content\bootstrap-extended.css" />
@@ -1223,11 +1223,11 @@
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+      <DependentUpon>ManajemenInsiden.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+      <DependentUpon>ManajemenInsiden.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
