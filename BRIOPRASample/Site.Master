@@ -8,10 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> - My ASP.NET Application</title>
 
-    <asp:PlaceHolder runat="server">
-        <%: Scripts.Render("~/bundles/modernizr") %>
-    </asp:PlaceHolder>
-
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
@@ -36,7 +32,6 @@
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
-
             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item">
             <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
@@ -61,11 +56,7 @@
                 <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
             </footer>
         </div>
-
     </form>
 </body>
-     <asp:ScriptManager runat="server">
-         <asp:ContentPlaceHolder ID="Scripts" runat="server">
-         </asp:ContentPlaceHolder>
-     </asp:ScriptManager>
+    
 </html>
