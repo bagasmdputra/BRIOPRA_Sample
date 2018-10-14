@@ -64,4 +64,8 @@
 
     </form>
 </body>
+     <asp:ScriptManager runat="server">
+         <asp:ContentPlaceHolder ID="Scripts" runat="server">
+         </asp:ContentPlaceHolder>
+     </asp:ScriptManager>
 </html>
