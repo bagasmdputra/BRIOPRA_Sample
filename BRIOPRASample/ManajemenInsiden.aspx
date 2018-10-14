@@ -152,8 +152,7 @@
                                     </div>
                                 </div>
                                 <div class="form-actions">
-                                    <asp:Button type="button" runat="server" ID="button" class="btn btn-outline-primary mb-1 mr-1 btn-min-width" OnClick="BtnCari_Click" Text="Cari">
-                                    </asp:Button>
+                                    <asp:Button type="button" runat="server" ID="button" class="btn btn-outline-primary mb-1 mr-1 btn-min-width" OnClick="BtnCari_Click" Text="Cari"></asp:Button>
                                 </div>
                             </div>
                         </div>
@@ -162,7 +161,7 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <div class="card" ID="DaftarInsidenRow" runat="server" visible="false">
+                    <div class="card">
                         <div class="card-header">
                             <h4 class="card-title">Daftar Insiden</h4>
                         </div>
@@ -193,18 +192,28 @@
                                             <tbody>
                                                 <tr id="ItemPlaceHolder" runat="server"></tr>
                                             </tbody>
-
                                         </table>
                                     </LayoutTemplate>
 
                                     <ItemTemplate>
                                         <tr>
+                                            <td></td>
                                             <td>
                                                 <%# Container.DataItemIndex+1 %>
                                             </td>
                                             <td>
                                                 <%# Eval("IdInsiden") %>
                                             </td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
                                             <td>
                                                 <button type="button" class="btn btn-icon btn-pure danger mr-1" data-toggle="modal"
                                                     data-backdrop="false" data-target="#deletemodal1">
@@ -215,6 +224,7 @@
                                                     <i class="fa fa-pencil"></i>
                                                 </button>
                                             </td>
+                                            <td></td>
                                         </tr>
                                     </ItemTemplate>
 

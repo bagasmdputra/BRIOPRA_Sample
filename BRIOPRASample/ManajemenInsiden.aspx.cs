@@ -29,7 +29,7 @@ namespace BRIOPRASample
         protected void BtnCari_Click(object sender, EventArgs e)
         {
             
-            DaftarInsidenRow.Visible = true;
+            //DaftarInsidenRow.Visible = true;
         }
     }
 

@@ -439,7 +439,13 @@
                 <asp:ScriptReference Path="~/Scripts/core/app-menu.js" />
                 <asp:ScriptReference Path="~/Scripts/core/app.js" />
                 <asp:ScriptReference Path="~/Scripts/scripts/customizer.js" />
-                <asp:ScriptReference Path="~/Scripts/scripts/customizer.js" />
+                <asp:ScriptReference Path="~/Scripts/vendors/tables/datatable/datatables.min.js" />
+                <asp:ScriptReference Path="~/Scripts/vendors/tables/datatable/dataTables.responsive.min.js" />
+                <asp:ScriptReference Path="~/Scripts/vendors/tables/jsgrid/jsgrid.min.js" />
+                <asp:ScriptReference Path="~/Scripts/vendors/tables/jsgrid/jsgrid.js" />
+                <asp:ScriptReference Path="~/Scripts/vendors/tables/jsgrid/griddata.js" />
+                <asp:ScriptReference Path="~/Scripts/vendors/forms/icheck/icheck.min.js" />
+                <asp:ScriptReference Path="~/Scripts/vendors/tables/datatables-extensions/datatable-briopra.js" />
                 <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
                 <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
                 <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
