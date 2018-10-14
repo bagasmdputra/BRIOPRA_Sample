@@ -28,136 +28,133 @@
                             <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
                         </div>
                         <div class="card-content">
-                            <div class="card-body">
-                                <form class="form form-horizontal">
-                                    <div class="form-body">
-                                        <div class="row">
-                                            <div class="col-md-8">
-                                                <div class="form-group row">
-                                                    <label class="col-md-5" for="userinput1">No. Insiden</label>
-                                                    <div class="col-md-7">
-                                                        <input type="text" id="userinput1" class="form-control"
-                                                            placeholder="Masukkan Nomor Insiden" name="firstname">
-                                                    </div>
+                            <div class="card-body form form-horizontal">
+                                <div class="form-body">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <div class="form-group row">
+                                                <label class="col-md-5" for="userinput1">No. Insiden</label>
+                                                <div class="col-md-7">
+                                                    <input type="text" id="userinput1" class="form-control"
+                                                        placeholder="Masukkan Nomor Insiden" name="firstname">
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-8">
-                                                <div class="form-group row">
-                                                    <label class="col-md-5" for="userinput1">Organisasi</label>
-                                                    <div class="col-md-7">
-                                                        blabla
-                                                    </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <div class="form-group row">
+                                                <label class="col-md-5" for="userinput1">Organisasi</label>
+                                                <div class="col-md-7">
+                                                    blabla
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-8">
-                                                <div class="form-group row">
-                                                    <label class="col-md-5" for="userinput1">Unit Kerja</label>
-                                                    <div class="col-md-7">
-                                                        blabla
-                                                    </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <div class="form-group row">
+                                                <label class="col-md-5" for="userinput1">Unit Kerja</label>
+                                                <div class="col-md-7">
+                                                    blabla
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-8">
-                                                <div class="form-group row">
-                                                    <label class="col-md-5" for="userinput1">Produk / Aktivitas</label>
-                                                    <div class="col-md-7">
-                                                        <select id="projectinput6" name="interested"
-                                                            class="form-control">
-                                                            <option value="none" selected="" disabled="">Interested in
-                                                            </option>
-                                                            <option value="design">design</option>
-                                                            <option value="development">development</option>
-                                                            <option value="illustration">illustration</option>
-                                                            <option value="branding">branding</option>
-                                                            <option value="video">video</option>
-                                                        </select>
-                                                    </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <div class="form-group row">
+                                                <label class="col-md-5" for="userinput1">Produk / Aktivitas</label>
+                                                <div class="col-md-7">
+                                                    <select id="projectinput6" name="interested"
+                                                        class="form-control">
+                                                        <option value="none" selected="" disabled="">Interested in
+                                                        </option>
+                                                        <option value="design">design</option>
+                                                        <option value="development">development</option>
+                                                        <option value="illustration">illustration</option>
+                                                        <option value="branding">branding</option>
+                                                        <option value="video">video</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-8">
-                                                <div class="form-group row">
-                                                    <label class="col-md-5" for="userinput1">Level</label>
-                                                    <div class="col-md-7">
-                                                        <select id="projectinput7" name="interested"
-                                                            class="form-control">
-                                                            <option value="none" selected="" disabled="">Interested in
-                                                            </option>
-                                                            <option value="design">design</option>
-                                                            <option value="development">development</option>
-                                                            <option value="illustration">illustration</option>
-                                                            <option value="branding">branding</option>
-                                                            <option value="video">video</option>
-                                                        </select>
-                                                    </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <div class="form-group row">
+                                                <label class="col-md-5" for="userinput1">Level</label>
+                                                <div class="col-md-7">
+                                                    <select id="projectinput7" name="interested"
+                                                        class="form-control">
+                                                        <option value="none" selected="" disabled="">Interested in
+                                                        </option>
+                                                        <option value="design">design</option>
+                                                        <option value="development">development</option>
+                                                        <option value="illustration">illustration</option>
+                                                        <option value="branding">branding</option>
+                                                        <option value="video">video</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-8">
-                                                <div class="form-group row">
-                                                    <label class="col-md-5" for="userinput1">Insiden Ditemukan</label>
-                                                    <div class="col-md-7">
-                                                        <div class="input-group">
-                                                            <input type="text" class="form-control daterange">
-                                                            <div class="input-group-append">
-                                                                <span class="input-group-text">
-                                                                    <span class="fa fa-calendar"></span>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-8">
-                                                <div class="form-group row">
-                                                    <label class="col-md-5" for="userinput1">Insiden Terjadi</label>
-                                                    <div class="col-md-7">
-                                                        <div class="input-group">
-                                                            <input type="text" class="form-control daterange">
-                                                            <div class="input-group-append">
-                                                                <span class="input-group-text">
-                                                                    <span class="fa fa-calendar"></span>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-8">
-                                                <div class="form-group row">
-                                                    <label class="col-md-5" for="userinput1">Insiden Dicatat</label>
-                                                    <div class="col-md-7">
-                                                        <div class="input-group">
-                                                            <input type="text" class="form-control daterange">
-                                                            <div class="input-group-append">
-                                                                <span class="input-group-text">
-                                                                    <span class="fa fa-calendar"></span>
-                                                                </span>
-                                                            </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <div class="form-group row">
+                                                <label class="col-md-5" for="userinput1">Insiden Ditemukan</label>
+                                                <div class="col-md-7">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control daterange">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text">
+                                                                <span class="fa fa-calendar"></span>
+                                                            </span>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="form-actions">
-                                        <button type="button" class="btn btn-outline-primary mb-1 mr-1 btn-min-width">
-                                            <i class="fa fa-search"></i>Cari
-                                        </button>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <div class="form-group row">
+                                                <label class="col-md-5" for="userinput1">Insiden Terjadi</label>
+                                                <div class="col-md-7">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control daterange">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text">
+                                                                <span class="fa fa-calendar"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </form>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <div class="form-group row">
+                                                <label class="col-md-5" for="userinput1">Insiden Dicatat</label>
+                                                <div class="col-md-7">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control daterange">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text">
+                                                                <span class="fa fa-calendar"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <asp:Button type="button" runat="server" ID="button" class="btn btn-outline-primary mb-1 mr-1 btn-min-width" OnClick="BtnCari_Click" Text="Cari">
+                                    </asp:Button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -165,7 +162,7 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <div class="card">
+                    <div class="card" ID="DaftarInsidenRow" runat="server" visible="false">
                         <div class="card-header">
                             <h4 class="card-title">Daftar Insiden</h4>
                         </div>
@@ -206,6 +203,9 @@
                                                 <%# Container.DataItemIndex+1 %>
                                             </td>
                                             <td>
+                                                <%# Eval("IdInsiden") %>
+                                            </td>
+                                            <td>
                                                 <button type="button" class="btn btn-icon btn-pure danger mr-1" data-toggle="modal"
                                                     data-backdrop="false" data-target="#deletemodal1">
                                                     <i class="fa fa-trash"></i>
@@ -227,13 +227,11 @@
                                         </table>
                                     </EmptyDataTemplate>
                                 </asp:ListView>
-                                <form class="form">
-                                    <div class="form-actions">
-                                        <button type="button" class="btn btn-outline-primary mb-1 mr-1 btn-min-width">
-                                            <i class="fa fa-plus"></i>Tambah
-                                        </button>
-                                    </div>
-                                </form>
+                                <div class="form-actions">
+                                    <button type="button" runat="server" id="ButtonTambah" class="btn btn-outline-primary mb-1 mr-1 btn-min-width">
+                                        <i class="fa fa-plus"></i>Tambah
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -241,8 +239,6 @@
             </div>
         </div>
     </div>
-    </div>
-
     <div class="modal fade text-left" id="editmodal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel8"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -308,4 +304,5 @@
                 </div>
             </div>
         </div>
+    </div>
 </asp:Content>

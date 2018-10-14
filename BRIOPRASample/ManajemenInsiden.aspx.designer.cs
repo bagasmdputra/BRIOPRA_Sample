@@ -13,6 +13,24 @@ namespace BRIOPRASample {
     public partial class ManajemenInsiden {
         
         /// <summary>
+        /// button control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button button;
+        
+        /// <summary>
+        /// DaftarInsidenRow control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl DaftarInsidenRow;
+        
+        /// <summary>
         /// ListViewInsiden control.
         /// </summary>
         /// <remarks>
@@ -20,5 +38,14 @@ namespace BRIOPRASample {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ListView ListViewInsiden;
+        
+        /// <summary>
+        /// ButtonTambah control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlButton ButtonTambah;
     }
 }

@@ -16,7 +16,7 @@ namespace BRIOPRASample
 
         public void BindData()
         {
-            List<Insiden> list = new List<Insiden>();
+            IList<Insiden> list = new List<Insiden>() {new Insiden(25)};
             ListViewInsiden.DataSource = list;
             ListViewInsiden.DataBind();
 
@@ -25,10 +25,20 @@ namespace BRIOPRASample
             //ListViewEmployeeFonrm.DataSource = listForm;
             //ListViewEmployeeForm.DataBind();
         }
+
+        protected void BtnCari_Click(object sender, EventArgs e)
+        {
+            
+            DaftarInsidenRow.Visible = true;
+        }
     }
 
     public class Insiden
     {
+        public Insiden(int id)
+        {
+            this.IdInsiden = id;
+        }
         public int IdInsiden { get; set; }
     }
 }
