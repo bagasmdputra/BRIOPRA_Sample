@@ -18,7 +18,7 @@ function GridView_setStateValue() {
     this.stateField.value = this.createPropertyString();
 }
 function GridView_OnCallback (result, context) {
-    var value = new String(result);
+    var value = String(result);
     var valsArray = value.split("|");
     var innerHtml = valsArray[4];
     for (var i = 5; i < valsArray.length; i++) {
@@ -31,6 +31,6 @@ function GridView_getHiddenFieldContents(arg) {
     return arg + "|" + this.stateField.value;
 }
 function createPropertyStringFromValues_GridView(pageIndex, sortDirection, sortExpression, dataKeys) {
-    var value = new Array(pageIndex, sortDirection, sortExpression, dataKeys);
+    var value = [pageIndex, sortDirection, sortExpression, dataKeys];
     return value.join("|");
 }

@@ -2,7 +2,7 @@
 var snSrc;
 if ((typeof(window.__smartNav) == "undefined") || (window.__smartNav == null))
 {
-    window.__smartNav = new Object();
+    window.__smartNav = {};
     window.__smartNav.update = function()
     {
         var sn = window.__smartNav;
@@ -20,7 +20,10 @@ if ((typeof(window.__smartNav) == "undefined") || (window.__smartNav == null))
                 sn.sHif.style.display = "none";
                 sn.sHif.src = snSrc;
             }
-            try {window.location = fdr[0].url;} catch (e) {};
+            try {
+                window.location = fdr[0].url;
+            } catch (e) {
+            }
             return;
         }
         var fdurl = fd.location.href;
@@ -37,7 +40,7 @@ if ((typeof(window.__smartNav) == "undefined") || (window.__smartNav == null))
 		sn._savedOnLoad = window.onload;
 		window.onload = null;
 		window.__smartNav.updateHelper();
-	}
+	};
 	window.__smartNav.updateHelper = function()
 	{
 		if (document.readyState != "complete")
@@ -46,7 +49,7 @@ if ((typeof(window.__smartNav) == "undefined") || (window.__smartNav == null))
 		    return;
 		}
 		window.__smartNav.loadNewContent();
-	}
+	};
 	window.__smartNav.loadNewContent = function()
 	{
 		var sn = window.__smartNav;
@@ -133,11 +136,17 @@ if ((typeof(window.__smartNav) == "undefined") || (window.__smartNav == null))
         }
         if (typeof(window.onload) == "string")
         {
-            try { eval(window.onload) } catch (e) {};
+            try {
+                eval(window.onload)
+            } catch (e) {
+            }
         }
         else if ((typeof(window.onload) != "undefined") && (window.onload != null))
         {
-            try { window.onload() } catch (e) {};
+            try {
+                window.onload()
+            } catch (e) {
+            }
         }
         sn._savedOnLoad = null;
         sn.attachForm();
@@ -152,8 +161,11 @@ if ((typeof(window.__smartNav) == "undefined") || (window.__smartNav == null))
             return;
         var ae = document.all(sAeId);
         if ((typeof(ae) == "undefined") || (ae == null)) return;
-        try { ae.focus(); } catch(e){};
-    }
+        try {
+            ae.focus();
+        } catch (e) {
+        }
+    };
     window.__smartNav.saveHistory = function()
     {
         if ((typeof(window.__smartNav.hif) != "undefined") && (window.__smartNav.hif != null))
@@ -164,7 +176,7 @@ if ((typeof(window.__smartNav) == "undefined") || (window.__smartNav == null))
             document.all[window.__smartNav.siHif].insertAdjacentElement(
                         "BeforeBegin", window.__smartNav.sHif);
         }
-    }
+    };
     window.__smartNav.stopHif = function()
     {
         document.detachEvent("onstop", window.__smartNav.stopHif);
@@ -179,7 +191,7 @@ if ((typeof(window.__smartNav) == "undefined") || (window.__smartNav == null))
         {
             try {sn.hifDoc.execCommand("stop");} catch (e){}
         }
-    }
+    };
     window.__smartNav.init =  function()
     {
         var sn = window.__smartNav;
@@ -204,7 +216,10 @@ if ((typeof(window.__smartNav) == "undefined") || (window.__smartNav == null))
             sn.hifDoc = sn.hif.contentWindow.document;
         }
         if ((typeof(sn.hifDoc) != "undefined") && (sn.hifDoc != null))
-            try {sn.hifDoc.designMode = "On";} catch(e){};
+            try {
+                sn.hifDoc.designMode = "On";
+            } catch (e) {
+            }
         if ((typeof(sn.hif.parentElement) == "undefined") || (sn.hif.parentElement == null))
             document.body.appendChild(sn.hif);
         var hif = sn.hif;

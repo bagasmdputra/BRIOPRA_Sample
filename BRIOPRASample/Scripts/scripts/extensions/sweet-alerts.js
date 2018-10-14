@@ -88,18 +88,18 @@ $(document).ready(function(){
 		    if (isConfirm) {
 		        swal("Deleted!", "Your imaginary file has been deleted.", "success");
 		    } else {
-		        swal("Cancelled", "Your imaginary file is safe", "error");
-		    }
-		});
-
-	});
+                swal("Cancelled", "Your imaginary file is safe", "error";
+    )
+    }
+    })
+    });
 
 	$('#prompt-function').on('click',function(){
         swal("Write something interesting:", {
                 content: "input",
             })
             .then((value) => {
-            	if (value === false) return false;
+            	if (value === false;) return false;
 			    if (value === "") {
 			        swal("You need to write something!", "", "error");
 			        return false;
@@ -119,7 +119,7 @@ $(document).ready(function(){
                 },
             })
             .then(name => {
-                if (!name) throw null;
+                if (;!name;) throw null;
 
                 return fetch(`https://itunes.apple.com/search?term=${name}&entity=movie`);
             })
@@ -149,8 +149,8 @@ $(document).ready(function(){
                     swal.stopLoading();
                     swal.close();
                 }
-            });
-	});
+    })
+    });
 
 	$('#confirm-text').on('click',function(){
 		swal({
@@ -177,10 +177,11 @@ $(document).ready(function(){
 		    if (isConfirm) {
 		        swal("Changed!", "Confirm button text was changed!!", "success");
 		    } else {
-		        swal("Cancelled", "It's safe.", "error");
-		    }
-		});
-	});
+                swal("Cancelled", "It's safe.", "error";
+    )
+    }
+    })
+    });
 
 	$('#confirm-color').on('click',function(){
 		swal({
@@ -208,9 +209,10 @@ $(document).ready(function(){
 		    if (isConfirm) {
 		        swal("Deleted!", "Your imaginary file has been deleted.", "success");
 		    } else {
-		        swal("Cancelled", "Your imaginary file is safe :)", "error");
-		    }
-		});
-	});
+                swal("Cancelled", "Your imaginary file is safe :)", "error";
+    )
+    }
+    })
+    });
 
 });

@@ -44,7 +44,7 @@ require.helper.semVerSort = function(a, b) {
       if (aLex === '' && bLex !== '') return 1;
       if (aLex !== '' && bLex === '') return -1;
       if (aLex !== '' && bLex !== '') return aLex > bLex ? 1 : -1;
-      continue;
+      
     } else if (aInt > bInt) {
       return 1;
     } else {
@@ -52,7 +52,7 @@ require.helper.semVerSort = function(a, b) {
     }
   }
   return 0;
-}
+};
 
 /**
  * Find and require a module which name starts with the provided name.
@@ -103,7 +103,7 @@ require.latest = function (name, returnPath) {
     return module;
   }
   return require(module);
-}
+};
 
 /**
  * Registered modules.
@@ -1309,18 +1309,18 @@ function match(el, selector) {
 });
 
 require.register("component~closest@0.1.4", function (exports, module) {
-var matches = require('component~matches-selector@0.1.5')
+var matches = require('component~matches-selector@0.1.5');
 
 module.exports = function (element, selector, checkYoSelf, root) {
-  element = checkYoSelf ? {parentNode: element} : element
+  element = checkYoSelf ? {parentNode: element} : element;
 
-  root = root || document
+  root = root || document;
 
   // Make sure `element !== document` and `element != null`
   // otherwise we get an illegal invocation
   while ((element = element.parentNode) && element !== document) {
     if (matches(element, selector))
-      return element
+      return element;
     // After `matches` on the edge case that
     // the selector matches the root
     // (when the root is not the document)
@@ -1952,4 +1952,4 @@ if (typeof exports == "object") {
 } else {
   (this || window)["Switchery"] = require("switchery");
 }
-})()
+})();

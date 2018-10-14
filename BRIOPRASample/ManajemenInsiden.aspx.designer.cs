@@ -13,13 +13,13 @@ namespace BRIOPRASample {
     public partial class ManajemenInsiden {
         
         /// <summary>
-        /// UpdatePanel2 control.
+        /// UpdatePanel1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanel2;
+        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
         
         /// <summary>
         /// btnCari control.
@@ -29,6 +29,24 @@ namespace BRIOPRASample {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnCari;
+        
+        /// <summary>
+        /// updatePanel2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel updatePanel2;
+        
+        /// <summary>
+        /// DaftarInsidenCard control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl DaftarInsidenCard;
         
         /// <summary>
         /// ListViewInsiden control.

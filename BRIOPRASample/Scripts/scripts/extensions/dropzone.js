@@ -26,7 +26,7 @@ Dropzone.options.dpzMultipleFiles = {
     paramName: "file", // The name that will be used to transfer the file
     maxFilesize: 0.5, // MB
     clickable: true
-}
+};
 
 
 /********************************************************
@@ -47,7 +47,7 @@ Dropzone.options.dpzFileLimits = {
     maxFilesize: 0.5, // MB
     maxFiles: 5,
     maxThumbnailFilesize: 1, // MB
-}
+};
 
 
 /********************************************
@@ -57,7 +57,7 @@ Dropzone.options.dpAcceptFiles = {
     paramName: "file", // The name that will be used to transfer the file
     maxFilesize: 1, // MB
     acceptedFiles: 'image/*'
-}
+};
 
 
 /************************************************
@@ -68,7 +68,7 @@ Dropzone.options.dpzRemoveThumb = {
     maxFilesize: 1, // MB
     addRemoveLinks: true,
     dictRemoveFile: " Trash"
-}
+};
 
 /*****************************************************
 *               Remove All Thumbnails                *
@@ -89,4 +89,4 @@ Dropzone.options.dpzRemoveAllThumb = {
             // could also call _this.removeAllFiles(true);
         });
     }
-}
+};

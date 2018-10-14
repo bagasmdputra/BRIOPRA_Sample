@@ -35,7 +35,7 @@
 
     var tubular = function(node, options) { // should be called on the wrapper div
         var options = $.extend({}, defaults, options),
-            $body = $('body') // cache body node
+            $body = $('body'); // cache body node
             $node = $(node); // cache wrapper node
 
         // build container
@@ -64,20 +64,20 @@
                     'onStateChange': onPlayerStateChange
                 }
             });
-        }
+        };
 
         window.onPlayerReady = function(e) {
             resize();
             if (options.mute) e.target.mute();
             e.target.seekTo(options.start);
             e.target.playVideo();
-        }
+        };
 
         window.onPlayerStateChange = function(state) {
             if (state.data === 0 && options.repeat) { // video ended and repeat option is set true
                 player.seekTo(options.start); // restart
             }
-        }
+        };
 
         // resize handler updates width, height and offset of player after resize/init
         var resize = function() {
@@ -97,12 +97,12 @@
                 $tubularPlayer.width(width).height(pHeight).css({left: 0, top: (height - pHeight) / 2}); // player height is greater, offset top; reset left
             }
 
-        }
+        };
 
         // events
         $(window).on('resize.tubular', function() {
             resize();
-        })
+        });
 
         $('body').on('click','.' + options.playButtonClass, function(e) { // play button
             e.preventDefault();
@@ -125,7 +125,7 @@
             if (currentVolume > 100 - options.increaseVolumeBy) currentVolume = 100 - options.increaseVolumeBy;
             player.setVolume(currentVolume + options.increaseVolumeBy);
         })
-    }
+    };
 
     // load yt iframe js api
 

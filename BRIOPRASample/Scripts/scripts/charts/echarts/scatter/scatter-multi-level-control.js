@@ -176,7 +176,7 @@ $(window).on("load", function(){
                                 symbol: 'emptyTriangle',
                                 symbolRotate:90,
                                 symbolSize:30
-                            })
+                            });
                             return d;
                         })(),
                         markPoint : {

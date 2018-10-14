@@ -36,7 +36,7 @@ tableEvents
     } )
     .on( 'key-blur', function ( e, datatable, cell ) {
         events.prepend( '<div>Cell blur: <i>'+cell.data()+'</i></div>' );
-    } )
+    } );
 
 /******************************
 *       Scrolling table       *
