@@ -40,3 +40,6 @@
     </div>
 
 </asp:Content>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="Scripts" runat="server">
+</asp:Content>

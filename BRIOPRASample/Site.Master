@@ -23,8 +23,6 @@
                 <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
                 <%--Framework Scripts--%>
                 <asp:ScriptReference Name="MsAjaxBundle" />
-                <asp:ScriptReference Name="jquery" />
-                <asp:ScriptReference Name="bootstrap" />
                 <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
                 <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
                 <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
@@ -37,6 +35,8 @@
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
+
+        
 
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
@@ -68,4 +68,8 @@
 
     </form>
 </body>
+     <asp:ScriptManager runat="server">
+         <asp:ContentPlaceHolder ID="Scripts" runat="server">
+         </asp:ContentPlaceHolder>
+     </asp:ScriptManager>
 </html>
