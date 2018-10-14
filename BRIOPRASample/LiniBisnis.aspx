@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="LiniBisnis.aspx.cs" Inherits="BRIOPRASample.About" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="app-content content">
     <div class="content-wrapper">
         <div class="content-header row">
             <div class="content-header-left col-md-6 col-12 mb-1">
@@ -706,6 +705,4 @@
             </div>
         </div>
     </div>
-    <!-- END MODAL -->
-</div>
 </asp:Content>
