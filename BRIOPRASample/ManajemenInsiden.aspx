@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="ManajemenInsiden" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ManajemenInsiden.aspx.cs" Inherits="BRIOPRASample.ManajemenInsiden" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+<asp:UpdatePanel ID="UpdatePanel2" runat="server" ChildrenAsTriggers="true">
+    <ContentTemplate>
     <div class="content-wrapper">
         <div class="content-header row">
             <div class="content-header-left col-md-6 col-12 mb-1">
@@ -152,7 +154,8 @@
                                     </div>
                                 </div>
                                 <div class="form-actions">
-                                    <asp:Button type="button" runat="server" ID="button" class="btn btn-outline-primary mb-1 mr-1 btn-min-width" OnClick="BtnCari_Click" Text="Cari"></asp:Button>
+                                    <asp:Button type="submit" runat="server" ID="btnCari" class="btn btn-outline-primary mb-1 mr-1 btn-min-width" OnClick="BtnCari_Click" Text="Cari"  CausesValidation="False">
+                                    </asp:Button>
                                 </div>
                             </div>
                         </div>
@@ -161,7 +164,7 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <div class="card">
+                    <div class="card" ID="DaftarInsidenRow" runat="server" visible="false">
                         <div class="card-header">
                             <h4 class="card-title">Daftar Insiden</h4>
                         </div>
@@ -172,6 +175,7 @@
                                         <table class="table table-striped table-bordered responsive dataex-res-controlright">
                                             <thead>
                                                 <tr>
+                                                    <th>#</th>
                                                     <th>Catat Insiden</th>
                                                     <th>Ubah</th>
                                                     <th>Lihat</th>
@@ -192,28 +196,36 @@
                                             <tbody>
                                                 <tr id="ItemPlaceHolder" runat="server"></tr>
                                             </tbody>
+
                                         </table>
                                     </LayoutTemplate>
 
+
                                     <ItemTemplate>
                                         <tr>
-                                            <td></td>
                                             <td>
-                                                <%# Container.DataItemIndex+1 %>
+                                                <%# Container.DataItemIndex + 1 %>
+                                            </td>
+                                            <td>
+                                                Catat
+                                            </td>
+                                            <td>
+                                                Ubah
+                                            </td>
+                                            <td>
+                                                Lihat
                                             </td>
                                             <td>
                                                 <%# Eval("IdInsiden") %>
                                             </td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
+                                            <td> <%# Eval ("Organisasi")%></td>
+                                            <td> <%# Eval ("InsidenTerjadi")%></td>
+                                            <td> <%# Eval ("InsidenDicatat")%></td>
+                                            <td> <%# Eval ("Deskripsi")%></td>
+                                            <td> <%# Eval ("Finansial")%></td>
+                                            <td> <%# Eval ("AP")%></td>
+                                            <td> <%# Eval ("Status")%></td>
+                                            <td> <%# Eval ("LevelSaatIni")%></td>
                                             <td>
                                                 <button type="button" class="btn btn-icon btn-pure danger mr-1" data-toggle="modal"
                                                     data-backdrop="false" data-target="#deletemodal1">
@@ -224,7 +236,6 @@
                                                     <i class="fa fa-pencil"></i>
                                                 </button>
                                             </td>
-                                            <td></td>
                                         </tr>
                                     </ItemTemplate>
 
@@ -234,7 +245,7 @@
                                                 <td>No records available.
                                                 </td>
                                             </tr>
-                                        </table>
+                                        </table>    
                                     </EmptyDataTemplate>
                                 </asp:ListView>
                                 <div class="form-actions">
@@ -244,7 +255,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>   
                 </div>
             </div>
         </div>
@@ -315,4 +326,26 @@
             </div>
         </div>
     </div>
+    <script>
+        function pageLoad(){ 
+            jQuery(function ($) {
+                $(".dataex-res-controlright").DataTable({
+                    destroy: true,
+                    responsive: {
+                        details: {
+                            type : 'column',
+                            target : -1
+                        }
+                    },
+                    columnDefs: [
+                        {
+                            className: 'control',
+                            targets: -1
+                        }]
+                });
+            });
+        }  
+    </script>
+    </ContentTemplate>
+</asp:UpdatePanel>
 </asp:Content>

@@ -17,9 +17,9 @@
 
 </head>
 <body class="vertical-layout vertical-menu 2-columns   menu-expanded fixed-navbar" data-open="click" data-menu="vertical-menu" data-col="2-columns">
-    <form runat="server">
-
-        <!-- START OF NAV -->
+    <form runat="server" novalidate>
+    <asp:ScriptManager runat="server" ID="scriptManager"/>
+    <!-- START OF NAV -->
         <nav class="header-navbar navbar-expand-md navbar navbar-with-menu fixed-top navbar-light navbar-border">
             <div class="navbar-wrapper">
                 <div class="navbar-header">
@@ -139,7 +139,7 @@
                                 </li>
                                 <li class="col-md-4">
                                     <h6 class="dropdown-menu-header text-uppercase mb-1"><i class="fa fa-envelope-o"></i>Contact Us</h6>
-                                    <form class="form form-horizontal">
+                                    <div class="form form-horizontal">
                                         <div class="form-body">
                                             <div class="form-group row">
                                                 <label class="col-sm-3 col-form-label" for="inputName1">Name</label>
@@ -174,7 +174,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </form>
+                                    </div>
                                 </li>
                             </ul>
             <li class="nav-item d-none d-md-block"><a class="nav-link nav-link-expand" href="#"><i class="ficon ft-maximize"></i></a></li>
@@ -430,7 +430,7 @@
             </p>
         </footer>
         <!-- END BODY CONTENT -->
-        <asp:ScriptManager runat="server">
+        <asp:ScriptManagerProxy runat="server">
             <Scripts>
                 <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
                 <%--Framework Scripts--%>
@@ -457,7 +457,7 @@
                 <asp:ScriptReference Name="WebFormsBundle" />
                 <%--Site Scripts--%>
             </Scripts>
-        </asp:ScriptManager>
+        </asp:ScriptManagerProxy>
     </form>
 </body>
     <asp:contentplaceholder id="Scripts" runat="server">
