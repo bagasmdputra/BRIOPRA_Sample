@@ -10,6 +10,6 @@
 namespace BRIOPRASample {
     
     
-    public partial class About {
+    public partial class LiniBisnis {
     }
 }
