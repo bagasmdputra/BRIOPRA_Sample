@@ -3,9 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="CSS" runat="server">
 </asp:Content>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:ScriptManagerProxy id="ScriptManagerProxy1" runat="server">
-
-    </asp:ScriptManagerProxy>
+    
 
     <div class="jumbotron">
         <h1>ASP.NET</h1>
@@ -44,4 +42,9 @@
         </div>
     </div>
 
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="Scripts" runat="server">
+    <asp:ScriptManagerProxy id="ScriptManagerProxy1" runat="server">
+
+    </asp:ScriptManagerProxy>
 </asp:Content>
