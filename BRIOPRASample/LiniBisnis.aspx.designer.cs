@@ -10,6 +10,10 @@
 namespace BRIOPRASample {
     
     
+<<<<<<< HEAD
     public partial class LiniBisnis {
+=======
+    public partial class ManajemenInsiden{
+>>>>>>> 9a2b1edef51768bdf735a23299d6d7452f5f532c
     }
 }

@@ -1958,6 +1958,40 @@
     <Content Include="Scripts\vendors\tables\buttons.flash.min.js" />
     <Content Include="Scripts\vendors\tables\buttons.html5.min.js" />
     <Content Include="Scripts\vendors\tables\buttons.print.min.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatable-autofill.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatable-autofill.min.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatable-briopra.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatable-briopra.min.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatable-button\datatable-button-basic.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatable-button\datatable-button-basic.min.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatable-button\datatable-extensions-api.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatable-button\datatable-extensions-api.min.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatable-button\datatable-flash.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatable-button\datatable-flash.min.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatable-button\datatable-html5.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatable-button\datatable-html5.min.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatable-button\datatable-print.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatable-button\datatable-print.min.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatable-button\datatable-visibility.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatable-button\datatable-visibility.min.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatable-colvis.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatable-colvis.min.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatable-fixed-column.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatable-fixed-column.min.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatable-fixed-header.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatable-fixed-header.min.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatable-keytable.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatable-keytable.min.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatable-responsive.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatable-responsive.min.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatable-rowreorder.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatable-rowreorder.min.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatable-select.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatable-select.min.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatables-colreorder.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatables-colreorder.min.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatables-sources.js" />
+    <Content Include="Scripts\vendors\tables\datatables-extensions\datatables-sources.min.js" />
     <Content Include="Scripts\vendors\tables\datatable\buttons.bootstrap4.min.js" />
     <Content Include="Scripts\vendors\tables\datatable\dataTables.autoFill.min.js" />
     <Content Include="Scripts\vendors\tables\datatable\dataTables.bootstrap4.min.js" />
@@ -2043,11 +2077,11 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Contact.aspx.cs">
+    <Compile Include="ManajemenInsiden.aspx.cs">
       <DependentUpon>ManajemenInsiden.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
+    <Compile Include="ManajemenInsiden.aspx.designer.cs">
       <DependentUpon>ManajemenInsiden.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
