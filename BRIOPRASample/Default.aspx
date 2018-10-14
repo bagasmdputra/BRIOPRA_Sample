@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="BRIOPRASample._Default" %>
 
-
+<asp:Content ID="Content1" ContentPlaceHolderID="CSS" runat="server">
+</asp:Content>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <asp:ScriptManagerProxy id="ScriptManagerProxy1" runat="server">
 
