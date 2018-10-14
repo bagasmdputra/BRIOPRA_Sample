@@ -106,7 +106,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
     <Content Include="ManajemenInsiden.aspx" />
     <Content Include="Content\app.css" />
     <Content Include="Content\app.min.css" />
@@ -457,6 +456,7 @@
     <Content Include="Content\vendors\ui\prism.min.css" />
     <Content Include="Content\vendors\weather-icons\climacons.min.css" />
     <Content Include="Default.aspx" />
+    <Content Include="LiniBisnis.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -1215,13 +1215,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>ManajemenInsiden.aspx</DependentUpon>
@@ -1236,6 +1229,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LiniBisnis.aspx.cs">
+      <DependentUpon>LiniBisnis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LiniBisnis.aspx.designer.cs">
+      <DependentUpon>LiniBisnis.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
