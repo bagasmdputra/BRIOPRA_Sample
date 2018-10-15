@@ -636,7 +636,6 @@
     <Content Include="fonts\simple-line-icons\style-origin.css" />
     <Content Include="fonts\simple-line-icons\style.css" />
     <Content Include="fonts\simple-line-icons\style.min.css" />
-    <Content Include="ManajemenInsiden.aspx" />
     <Content Include="Content\app.css" />
     <Content Include="Content\app.min.css" />
     <Content Include="Content\bootstrap-extended.css" />
@@ -1259,8 +1258,6 @@
     <Content Include="Content\vendors\ui\prism-treeview.css" />
     <Content Include="Content\vendors\ui\prism.min.css" />
     <Content Include="Content\vendors\weather-icons\climacons.min.css" />
-    <Content Include="Default.aspx" />
-    <Content Include="LiniBisnis.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -2069,7 +2066,10 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
-    <Content Include="Site.Master" />
+    <Content Include="UI_Pages\Common\MasterPage\Site.Master" />
+    <Content Include="UI_Pages\Modules\Default.aspx" />
+    <Content Include="UI_Pages\Modules\LiniBisnis\LiniBisnis.aspx" />
+    <Content Include="UI_Pages\Modules\ManajemenInsiden\ManajemenInsiden.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config">
@@ -2080,44 +2080,42 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="ManajemenInsiden.aspx.cs">
-      <DependentUpon>ManajemenInsiden.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ManajemenInsiden.aspx.designer.cs">
-      <DependentUpon>ManajemenInsiden.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="LiniBisnis.aspx.cs">
-      <DependentUpon>LiniBisnis.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="LiniBisnis.aspx.designer.cs">
-      <DependentUpon>LiniBisnis.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Site.Master.cs">
-      <DependentUpon>Site.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Site.Master.designer.cs">
-      <DependentUpon>Site.Master</DependentUpon>
-    </Compile>
     <Compile Include="Site.Mobile.Master.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Pages\Common\MasterPage\Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI_Pages\Common\MasterPage\Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Pages\Modules\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI_Pages\Modules\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Pages\Modules\LiniBisnis\LiniBisnis.aspx.cs">
+      <DependentUpon>LiniBisnis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Pages\Modules\LiniBisnis\LiniBisnis.aspx.designer.cs">
+      <DependentUpon>LiniBisnis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Pages\Modules\ManajemenInsiden\ManajemenInsiden.aspx.cs">
+      <DependentUpon>ManajemenInsiden.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Pages\Modules\ManajemenInsiden\ManajemenInsiden.aspx.designer.cs">
+      <DependentUpon>ManajemenInsiden.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
@@ -2129,6 +2127,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="UI_Pages\Common\Navigation" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
