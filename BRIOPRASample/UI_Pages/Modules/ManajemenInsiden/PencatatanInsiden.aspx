@@ -1,5 +1,17 @@
 ﻿<%@ Page Title="Pencatatan Insiden" Language="C#" MasterPageFile="~/UI_Pages/Common/MasterPage/Site.Master" AutoEventWireup="true" CodeBehind="PencatatanInsiden.aspx.cs" Inherits="BRIOPRASample.PencatatanInsiden" %>
 
+
+<asp:Content ID="Content1" ContentPlaceHolderID="CSS" runat="server">
+    <link rel="stylesheet" type="text/css" href="../../../../../Content/vendors.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../Content/vendors/forms/icheck/icheck.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../Content/vendors/forms/icheck/custom.css">
+
+    <link rel="stylesheet" type="text/css" href="../../../../../Content//core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../Content//plugins/forms/checkboxes-radios.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../Content//plugins/forms/wizard.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../Content//plugins/pickers/daterange/daterange.css">
+</asp:Content>
+
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="content-wrapper">
         <div class="content-header row">
@@ -37,7 +49,7 @@
                             </div>
                             <div class="card-content">
                                 <div class="card-body">
-                                    <div class="steps-validation wizard-circle">
+                                    <div class="number-tab-steps wizard-circle">
                                         <!--Step 1-->
                                         <h6>Step 1</h6>
                                         <!--<hr />-->

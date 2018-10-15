@@ -261,7 +261,6 @@
                                             <a href="PencatatanInsiden.aspx">
                                                 <button type="button" runat="server" id="ButtonTambah" class="btn btn-outline-primary mb-1 mr-1 btn-min-width">
                                                     <i class="fa fa-chevron-down "></i>Tambah
-                                   
                                                 </button>
                                             </a>
                                         </div>
