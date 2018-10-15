@@ -56,7 +56,7 @@
                                         <fieldset>
                                             <div class="row">
                                                 <div class="form-group col-md-12">
-                                                    <div id="accordionWrap2" role="tablist" aria-multiselectable="true" class=" box-shadow-1 padding-default">
+                                                    <div id="accordionWrap2" role="tablist" aria-multiselectable="true" class=" box-shadow-1 padding-accordion">
                                                         <div class="card collapse-icon accordion-icon-rotate left">
                                                             <div id="heading21" class="card-header">
                                                                 <a data-toggle="collapse" data-parent="#accordionWrap2"
