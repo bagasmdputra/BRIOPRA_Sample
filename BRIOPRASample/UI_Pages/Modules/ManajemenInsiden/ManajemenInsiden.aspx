@@ -73,7 +73,7 @@
                                                             <select id="projectinput6" name="interested"
                                                                 class="form-control">
                                                                 <option value="none" selected="" disabled="">Interested in
-                                                        </option>
+                                                                </option>
                                                                 <option value="design">design</option>
                                                                 <option value="development">development</option>
                                                                 <option value="illustration">illustration</option>
@@ -92,7 +92,7 @@
                                                             <select id="projectinput7" name="interested"
                                                                 class="form-control">
                                                                 <option value="none" selected="" disabled="">Interested in
-                                                        </option>
+                                                                </option>
                                                                 <option value="design">design</option>
                                                                 <option value="development">development</option>
                                                                 <option value="illustration">illustration</option>
@@ -168,18 +168,18 @@
 
             <div class="row">
                 <div class="col-12">
-                    <asp:UpdatePanel runat="server" ID="updatePanel2" >
+                    <asp:UpdatePanel runat="server" ID="updatePanel2">
                         <ContentTemplate>
-                    <div class="card" id="DaftarInsidenCard" runat="server" visible="False" >
-                        <div class="card-header">
-                            <h4 class="card-title">Daftar Insiden</h4>
-                        </div>
-                        <div class="card-content">
-                            <div class="card-body">
-                               
-                                       
-                                                <table class="table table-striped table-bordered responsive dataex-res-controlled">
-                                                <thead>
+                            <div class="card" id="DaftarInsidenCard" runat="server" visible="False">
+                                <div class="card-header">
+                                    <h4 class="card-title">Daftar Insiden</h4>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-body">
+
+
+                                        <table class="table table-striped table-bordered responsive dataex-res-controlled">
+                                            <thead>
                                                 <tr>
                                                     <th></th>
                                                     <th>No</th>
@@ -197,76 +197,78 @@
                                                     <th>Pilih</th>
                                                     <th>Catat</th>
                                                 </tr>
-                                                </thead>
-                                                    <asp:UpdatePanel runat="server">
-                                                        <ContentTemplate>
-                                                            
-                                                <asp:ListView ID="ListViewInsiden" runat="server">
-                                                    <LayoutTemplate>
-                                                        <tbody>
-                                                        <tr id="ItemPlaceHolder" runat="server"></tr>
-                                                        </tbody>
-                                                    </LayoutTemplate>
-                                                    <ItemTemplate>
-                                                        <tr>
-                                                            <td><span><i class="fa fa-plus" aria-hidden="true"></i></span></td>
-                                                            <td>
-                                                                <%# Container.DataItemIndex + 1 %>
-                                            </td>
-                                                            <td>-
-                                            </td>
-                                                            <td>
-                                                                <button type="button" class="btn btn-icon btn-pure danger mr-1" data-toggle="modal"
-                                                                    data-backdrop="false" data-target="#deletemodal1">
-                                                                    <i class="fa fa-trash"></i>
-                                                                </button>
-                                                                <button type="button" class="btn btn-icon btn-pure warning mr-1" data-toggle="modal"
-                                                                    data-backdrop="false" data-target="#editmodal1">
-                                                                    <i class="fa fa-pencil"></i>
-                                                                </button>
-                                                            </td>
-                                                            <td>
-                                                                <%# Eval("IdInsiden") %>
-                                            </td>
-                                                            <td><%# Eval("Organisasi") %></td>
-                                                            <td><%# Eval("InsidenTerjadi") %></td>
-                                                            <td><%# Eval("InsidenDicatat") %></td>
-                                                            <td><%# Eval("Deskripsi") %></td>
-                                                            <td><%# Eval("Finansial") %></td>
-                                                            <td><%# Eval("AP") %></td>
-                                                            <td><%# Eval("Status") %></td>
-                                                            <td><%# Eval("LevelSaatIni") %></td>
-                                                            <td>-</td>
-                                                            <td>-</td>
-                                                        </tr>
-                                                    </ItemTemplate>
-                                                    <EmptyDataTemplate>
-                                                        <table class="emptyTable" cellpadding="5" cellspacing="5">
-                                                            <tr>
-                                                                <td>No records available.
-                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </EmptyDataTemplate>
-                                                </asp:ListView>
-                                                        </ContentTemplate>
-                                                        <Triggers>
-                                                            <asp:AsyncPostBackTrigger ControlID="btnCari" 
-                                                                                      EventName="Click" />
-                                                        </Triggers>
-                                                    </asp:UpdatePanel>
-                                                </table>
+                                            </thead>
+                                            <asp:UpdatePanel runat="server">
+                                                <ContentTemplate>
 
-                                <div class="form-actions">
-                                    <button type="button" runat="server" id="ButtonTambah" class="btn btn-outline-primary mb-1 mr-1 btn-min-width">
-                                        <i class="fa fa-chevron-down "></i>Tambah
+                                                    <asp:ListView ID="ListViewInsiden" runat="server">
+                                                        <LayoutTemplate>
+                                                            <tbody>
+                                                                <tr id="ItemPlaceHolder" runat="server"></tr>
+                                                            </tbody>
+                                                        </LayoutTemplate>
+                                                        <ItemTemplate>
+                                                            <tr>
+                                                                <td><span><i class="fa fa-plus" aria-hidden="true"></i></span></td>
+                                                                <td>
+                                                                    <%# Container.DataItemIndex + 1 %>
+                                                                </td>
+                                                                <td>-
+                                                                </td>
+                                                                <td>
+                                                                    <button type="button" class="btn btn-icon btn-pure danger mr-1" data-toggle="modal"
+                                                                        data-backdrop="false" data-target="#deletemodal1">
+                                                                        <i class="fa fa-trash"></i>
+                                                                    </button>
+                                                                    <button type="button" class="btn btn-icon btn-pure warning mr-1" data-toggle="modal"
+                                                                        data-backdrop="false" data-target="#editmodal1">
+                                                                        <i class="fa fa-pencil"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td>
+                                                                    <%# Eval("IdInsiden") %>
+                                                                </td>
+                                                                <td><%# Eval("Organisasi") %></td>
+                                                                <td><%# Eval("InsidenTerjadi") %></td>
+                                                                <td><%# Eval("InsidenDicatat") %></td>
+                                                                <td><%# Eval("Deskripsi") %></td>
+                                                                <td><%# Eval("Finansial") %></td>
+                                                                <td><%# Eval("AP") %></td>
+                                                                <td><%# Eval("Status") %></td>
+                                                                <td><%# Eval("LevelSaatIni") %></td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                            </tr>
+                                                        </ItemTemplate>
+                                                        <EmptyDataTemplate>
+                                                            <table class="emptyTable" cellpadding="5" cellspacing="5">
+                                                                <tr>
+                                                                    <td>No records available.
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </EmptyDataTemplate>
+                                                    </asp:ListView>
+                                                </ContentTemplate>
+                                                <Triggers>
+                                                    <asp:AsyncPostBackTrigger ControlID="btnCari"
+                                                        EventName="Click" />
+                                                </Triggers>
+                                            </asp:UpdatePanel>
+                                        </table>
+
+                                        <div class="form-actions">
+                                            <a href="PencatatanInsiden.aspx">
+                                                <button type="button" runat="server" id="ButtonTambah" class="btn btn-outline-primary mb-1 mr-1 btn-min-width">
+                                                    <i class="fa fa-chevron-down "></i>Tambah
                                    
-                                    </button>
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                        </ContentTemplate>       
+                        </ContentTemplate>
                     </asp:UpdatePanel>
                 </div>
             </div>
@@ -341,7 +343,7 @@
     </div>
     <script>
         function pageLoad() {
-            jQuery(function($) {
+            jQuery(function ($) {
                 $(".dataex-res-controlled").DataTable({
                     destroy: true,
                     responsive: {
@@ -363,8 +365,8 @@
 
                 });
             });
-            $(document).ready(function() {
-                $("link").each(function() {
+            $(document).ready(function () {
+                $("link").each(function () {
                     if ($(this).attr("type").indexOf("css") > -1) {
                         $(this).attr("href", $(this).attr("href") + "?id=" + new Date().getMilliseconds());
                     }

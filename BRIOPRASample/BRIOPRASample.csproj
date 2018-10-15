@@ -2096,6 +2096,7 @@
     </Compile>
     <Compile Include="UI_Pages\Common\Data\DataTable\DataTableControlControl.ascx.cs">
       <DependentUpon>DataTableControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UI_Pages\Common\Data\DataTable\DataTableControl.ascx.designer.cs">
       <DependentUpon>DataTableControl.ascx</DependentUpon>
@@ -2123,12 +2124,14 @@
     </Compile>
     <Compile Include="UI_Pages\Modules\LiniBisnis\LiniBisnis.aspx.cs">
       <DependentUpon>LiniBisnis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UI_Pages\Modules\LiniBisnis\LiniBisnis.aspx.designer.cs">
       <DependentUpon>LiniBisnis.aspx</DependentUpon>
     </Compile>
     <Compile Include="UI_Pages\Modules\ManajemenInsiden\ManajemenInsiden.aspx.cs">
       <DependentUpon>ManajemenInsiden.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UI_Pages\Modules\ManajemenInsiden\ManajemenInsiden.aspx.designer.cs">
       <DependentUpon>ManajemenInsiden.aspx</DependentUpon>
@@ -2150,7 +2153,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="UI_Pages\Common\Navigation\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
