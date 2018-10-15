@@ -10,10 +10,26 @@ NOTE:
 PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
 WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
 html {
-  box-sizing: border-box; }
+    box-sizing: border-box;
+}
 
 #opra-logo-box {
-  width: 25px; }
+    width: 25px;
+}
 
 .brand-text {
-  color: #233D90; }
+    color: #233D90;
+}
+
+.padding-default {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.padding-accordion {
+    padding: 10px;
+}
+
+.margin-bottom-default {
+    margin-bottom: 20px;
+}

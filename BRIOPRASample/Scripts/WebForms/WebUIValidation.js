@@ -56,11 +56,11 @@ function ValidatorHookupControl(control, val) {
         for (i = 0; i < control.childNodes.length; i++) {
             ValidatorHookupControl(control.childNodes[i], val);
         }
-        return;
+        
     }
     else {
         if (typeof(control.Validators) == "undefined") {
-            control.Validators = new Array;
+            control.Validators = [];
             var eventType;
             if (control.type == "radio") {
                 eventType = "onclick";

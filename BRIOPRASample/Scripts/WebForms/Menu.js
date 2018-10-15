@@ -433,7 +433,7 @@ function Menu_Key(item) {
         Menu_HideItems();
         event.cancelBubble = true;
         if (event.stopPropagation) event.stopPropagation();
-        return;
+        
     }
 }
 function Menu_ResetSiblings(item) {
@@ -558,7 +558,7 @@ function PopOut_Down(scroller) {
         panel = __scrollPanel;
     }
     if (panel && ((panel.offset + panel.clippedHeight) < panel.physicalHeight)) {
-        PopOut_Scroll(panel, 2)
+        PopOut_Scroll(panel, 2);
         __scrollPanel = panel;
         PopOut_ShowScrollers(panel);
         PopOut_Stop();
@@ -621,7 +621,7 @@ function PopOut_Position(panel, hideScrollers) {
         panelParentCoordinates = WebForm_GetElementPosition(panel.offsetParent);
     }
     else {
-        panelParentCoordinates = new Object();
+        panelParentCoordinates = {};
         panelParentCoordinates.x = 0;
         panelParentCoordinates.y = 0;
     }

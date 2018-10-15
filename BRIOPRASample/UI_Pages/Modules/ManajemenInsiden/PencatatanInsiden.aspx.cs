@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace BRIOPRASample
 {
-    public partial class About : Page
+    public partial class PencatatanInsiden : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

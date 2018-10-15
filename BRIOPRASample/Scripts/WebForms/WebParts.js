@@ -119,7 +119,7 @@ function Zone(zoneElement, zoneIndex, uniqueID, isVertical, allowLayoutChange, h
     }
     this.zoneElement = zoneElement;
     this.zoneIndex = zoneIndex;
-    this.webParts = new Array();
+    this.webParts = [];
     this.uniqueID = uniqueID;
     this.isVertical = isVertical;
     this.allowLayoutChange = allowLayoutChange;
@@ -127,7 +127,7 @@ function Zone(zoneElement, zoneIndex, uniqueID, isVertical, allowLayoutChange, h
     this.webPartTable = webPartTable;
     this.highlightColor = highlightColor;
     this.savedBorderColor = (webPartTable != null) ? webPartTable.style.borderColor : null;
-    this.dropCueElements = new Array();
+    this.dropCueElements = [];
     if (webPartTable != null) {
         if (isVertical) {
             for (i = 0; i < webPartTable.rows.length; i += 2) {
@@ -396,7 +396,7 @@ function WebPartMenu_OnMouseLeave() {
 }
 function WebPartManager() {
     this.overlayContainerElement = null;
-    this.zones = new Array();
+    this.zones = [];
     this.dragState = null;
     this.menu = null;
     this.draggedWebPart = null;

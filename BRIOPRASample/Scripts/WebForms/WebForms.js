@@ -43,7 +43,7 @@ function WebForm_DoPostBackWithOptions(options) {
         __doPostBack(options.eventTarget, options.eventArgument);
     }
 }
-var __pendingCallbacks = new Array();
+var __pendingCallbacks = [];
 var __synchronousCallBackIndex = -1;
 function WebForm_DoCallback(eventTarget, eventArgument, eventCallback, context, errorCallback, useAsync) {
     var postData = __theFormPostData +
@@ -68,7 +68,7 @@ function WebForm_DoCallback(eventTarget, eventArgument, eventCallback, context, 
         setRequestHeaderMethodExists = (xmlRequest && xmlRequest.setRequestHeader);
     }
     catch(e) {}
-    var callback = new Object();
+    var callback = {};
     callback.eventCallback = eventCallback;
     callback.context = context;
     callback.errorCallback = errorCallback;
@@ -105,7 +105,7 @@ function WebForm_DoCallback(eventTarget, eventArgument, eventCallback, context, 
         xmlRequest.send(postData);
         return;
     }
-    callback.xmlRequest = new Object();
+    callback.xmlRequest = {};
     var callbackFrameID = "__CALLBACKFRAME" + callbackIndex;
     var xmlRequestFrame = document.frames[callbackFrameID];
     if (!xmlRequestFrame) {
@@ -116,7 +116,7 @@ function WebForm_DoCallback(eventTarget, eventArgument, eventCallback, context, 
         xmlRequestFrame.id = callbackFrameID;
         xmlRequestFrame.name = callbackFrameID;
         xmlRequestFrame.style.position = "absolute";
-        xmlRequestFrame.style.top = "-100px"
+        xmlRequestFrame.style.top = "-100px";
         xmlRequestFrame.style.left = "-100px";
         try {
             if (callBackFrameUrl) {
@@ -235,7 +235,7 @@ function WebForm_FillFirstAvailableSlot(array, element) {
 }
 var __nonMSDOMBrowser = (window.navigator.appName.toLowerCase().indexOf('explorer') == -1);
 var __theFormPostData = "";
-var __theFormPostCollection = new Array();
+var __theFormPostCollection = [];
 var __callbackTextTypes = /^(text|password|hidden|search|tel|url|email|number|range|color|datetime|date|month|week|time|datetime-local)$/i;
 function WebForm_InitCallback() {
     var formElements = theForm.elements,
@@ -266,7 +266,7 @@ function WebForm_InitCallback() {
     }
 }
 function WebForm_InitCallbackAddField(name, value) {
-    var nameValue = new Object();
+    var nameValue = {};
     nameValue.name = name;
     nameValue.value = value;
     __theFormPostCollection[__theFormPostCollection.length] = nameValue;
@@ -280,7 +280,7 @@ function WebForm_EncodeCallback(parameter) {
         return escape(parameter);
     }
 }
-var __disabledControlArray = new Array();
+var __disabledControlArray = [];
 function WebForm_ReEnableControls() {
     if (typeof(__enabledControlArray) == 'undefined') {
         return false;
@@ -490,7 +490,7 @@ function WebForm_GetElementDir(element) {
     return "ltr";
 }
 function WebForm_GetElementPosition(element) {
-    var result = new Object();
+    var result = {};
     result.x = 0;
     result.y = 0;
     result.width = 0;
