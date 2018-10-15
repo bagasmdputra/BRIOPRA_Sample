@@ -2066,7 +2066,9 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="UI_Pages\Common\Data\DataTable\DataTableControl.ascx" />
     <Content Include="UI_Pages\Common\MasterPage\Site.Master" />
+    <Content Include="UI_Pages\Common\Navigation\NavigationControl.ascx" />
     <Content Include="UI_Pages\Modules\Default.aspx" />
     <Content Include="UI_Pages\Modules\LiniBisnis\LiniBisnis.aspx" />
     <Content Include="UI_Pages\Modules\ManajemenInsiden\ManajemenInsiden.aspx" />
@@ -2091,12 +2093,25 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="UI_Pages\Common\Data\DataTable\DataTableControlControl.ascx.cs">
+      <DependentUpon>DataTableControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Pages\Common\Data\DataTable\DataTableControl.ascx.designer.cs">
+      <DependentUpon>DataTableControl.ascx</DependentUpon>
+    </Compile>
     <Compile Include="UI_Pages\Common\MasterPage\Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UI_Pages\Common\MasterPage\Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Pages\Common\Navigation\NavigationControl.ascx.cs">
+      <DependentUpon>NavigationControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI_Pages\Common\Navigation\NavigationControl.ascx.designer.cs">
+      <DependentUpon>NavigationControl.ascx</DependentUpon>
     </Compile>
     <Compile Include="UI_Pages\Modules\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -2127,7 +2142,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="UI_Pages\Common\Navigation" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
