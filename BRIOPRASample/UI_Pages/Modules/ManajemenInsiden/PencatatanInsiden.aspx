@@ -79,7 +79,7 @@
                                                                                         aria-hidden="true">
                                                                                         <optgroup
                                                                                             label="Alaskan/Hawaiian Time Zone">
-                                                                                            <option value="AK">Alaska
+                                                                                            <option value="AK">Kliring
                                                                                             </option>
                                                                                             <option value="HI">Hawaii
                                                                                             </option>
@@ -97,7 +97,7 @@
                                                                                         aria-hidden="true">
                                                                                         <optgroup
                                                                                             label="Alaskan/Hawaiian Time Zone">
-                                                                                            <option value="AK">Alaska
+                                                                                            <option value="AK">Cek
                                                                                             </option>
                                                                                             <option value="HI">Hawaii
                                                                                             </option>
@@ -112,7 +112,7 @@
                                                                                     <label>
                                                                                         Nominal (IDR) :
                                                                                     </label>
-                                                                                    <input type="text"
+                                                                                    <input type="number"
                                                                                         class="form-control"
                                                                                         id="nominal" name="nominal">
                                                                                 </div>
@@ -127,7 +127,7 @@
                                                                                     <label>
                                                                                         Nomor Rekening Penarik :
                                                                                     </label>
-                                                                                    <input type="text"
+                                                                                    <input type="number"
                                                                                         class="form-control"
                                                                                         id="nomorRekeningPenarik"
                                                                                         name="nomorRekeningPenarik">
@@ -156,7 +156,7 @@
                                                                                         aria-hidden="true">
                                                                                         <optgroup
                                                                                             label="Alaskan/Hawaiian Time Zone">
-                                                                                            <option value="AK">Alaska
+                                                                                            <option value="AK">Aktif
                                                                                             </option>
                                                                                             <option value="HI">Hawaii
                                                                                             </option>
@@ -270,7 +270,7 @@
                                                                                         aria-hidden="true">
                                                                                         <optgroup
                                                                                             label="Alaskan/Hawaiian Time Zone">
-                                                                                            <option value="AK">Alaska
+                                                                                            <option value="AK">Dilaporkan
                                                                                             </option>
                                                                                             <option value="HI">Hawaii
                                                                                             </option>
@@ -288,7 +288,7 @@
                                                                                         aria-hidden="true">
                                                                                         <optgroup
                                                                                             label="Alaskan/Hawaiian Time Zone">
-                                                                                            <option value="AK">Alaska
+                                                                                            <option value="AK">Tertangkap
                                                                                             </option>
                                                                                             <option value="HI">Hawaii
                                                                                             </option>
@@ -308,7 +308,7 @@
                                                                                         aria-hidden="true">
                                                                                         <optgroup
                                                                                             label="Alaskan/Hawaiian Time Zone">
-                                                                                            <option value="AK">Alaska
+                                                                                            <option value="AK">Dibukukan
                                                                                             </option>
                                                                                             <option value="HI">Hawaii
                                                                                             </option>
@@ -330,18 +330,9 @@
                                                         <label for="KKPT">
                                                             KKPT :
                                                         </label>
-                                                        <br />
-                                                        <div class="icheckbox_flat-aero checked"
-                                                            style="position: relative;">
-                                                            <input type="checkbox"
-                                                                id="KKPT" checked=""
-                                                                style="position: absolute; opacity: 0;">
-                                                            <ins class="iCheck-helper"
-                                                                style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
-                                                        </div>
+                                                        <input type="checkbox" value="">
                                                     </div>
                                                 </div>
-                                               
                                             </div>
                                             <div class="row">
                                                 <div class="form-group col-md-6">
