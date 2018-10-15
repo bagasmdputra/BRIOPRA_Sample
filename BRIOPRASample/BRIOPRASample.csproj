@@ -2070,6 +2070,7 @@
     <Content Include="UI_Pages\Modules\Default.aspx" />
     <Content Include="UI_Pages\Modules\LiniBisnis\LiniBisnis.aspx" />
     <Content Include="UI_Pages\Modules\ManajemenInsiden\ManajemenInsiden.aspx" />
+    <Content Include="UI_Pages\Modules\ManajemenInsiden\PencatatanInsiden.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config">
@@ -2117,6 +2118,13 @@
     <Compile Include="UI_Pages\Modules\ManajemenInsiden\ManajemenInsiden.aspx.designer.cs">
       <DependentUpon>ManajemenInsiden.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UI_Pages\Modules\ManajemenInsiden\PencatatanInsiden.aspx.cs">
+      <DependentUpon>PencatatanInsiden.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI_Pages\Modules\ManajemenInsiden\PencatatanInsiden.aspx.designer.cs">
+      <DependentUpon>PencatatanInsiden.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2127,7 +2135,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="UI_Pages\Common\Navigation" />
+    <Folder Include="UI_Pages\Common\Navigation\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
