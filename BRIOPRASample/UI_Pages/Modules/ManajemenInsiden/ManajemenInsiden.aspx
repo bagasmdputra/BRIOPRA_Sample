@@ -1,4 +1,4 @@
-﻿<%@ Page Title="ManajemenInsiden" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ManajemenInsiden.aspx.cs" Inherits="BRIOPRASample.ManajemenInsiden" %>
+﻿<%@ Page Title="ManajemenInsiden" Language="C#" MasterPageFile="~/UI_Pages/Common/MasterPage/Site.Master" AutoEventWireup="true" CodeBehind="ManajemenInsiden.aspx.cs" Inherits="BRIOPRASample.ManajemenInsiden" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="content-wrapper">

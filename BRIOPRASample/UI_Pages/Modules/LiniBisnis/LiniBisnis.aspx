@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Lini Bisnis" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="LiniBisnis.aspx.cs" Inherits="BRIOPRASample.LiniBisnis" %>
+﻿<%@ Page Title="Lini Bisnis" Language="C#" MasterPageFile="~/UI_Pages/Common/MasterPage/Site.Master" AutoEventWireup="true" CodeBehind="LiniBisnis.aspx.cs" Inherits="BRIOPRASample.LiniBisnis" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="content-wrapper">
