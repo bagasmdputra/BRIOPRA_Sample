@@ -437,13 +437,18 @@
                 </i>
             </li>
             <li class=" nav-item">
-                <a href="index.html">
-                    <i class="ft-home"></i><span class="menu-item" data-i18n="">Dashboard</span>
+                <a href="../../Modules/ManajemenInsiden/ManajemenInsiden.aspx">
+                    <i class="ft-home"></i><span class="menu-item" data-i18n="">Manajemen Insiden</span>
+                </a>
+            </li>
+            <li class=" nav-item">
+                <a href="../../Modules/LiniBisnis/LiniBisnis.aspx">
+                    <i class="ft-triangle"></i><span class="menu-item" data-i18n="">Lini Bisnis</span>
                 </a>
             </li>
             <li class=" nav-item">
                 <a href="#">
-                    <i class="ft-clipboard"></i><span class="menu-title" data-i18n="">LEM</span>
+                    <i class="ft-clipboard"></i><span class="menu-title" data-i18n="">Menu dummy</span>
                 </a>
                 <ul class="menu-content">
                     <li>
@@ -482,6 +487,7 @@
                     </li>
                 </ul>
             </li>
+            <!--
             <li class=" nav-item">
                 <a href="index.html">
                     <i class="ft-bell"></i><span class="menu-item" data-i18n="">Near Miss</span>
@@ -501,16 +507,14 @@
                     <i class="ft-monitor"></i><span class="menu-item" data-i18n="">Monitoring</span>
                 </a>
             </li>
-            <li class=" nav-item">
-                <a href="index.html">
-                    <i class="ft-triangle"></i><span class="menu-item" data-i18n="">Maturitas</span>
-                </a>
-            </li>
+
             <li class=" nav-item">
                 <a href="index.html">
                     <i class="ft-clipboard"></i><span class="menu-item" data-i18n="">Laporan</span>
                 </a>
             </li>
+
+                -->
             <li class=" navigation-header">
                 <span>Pengaturan & Lainnya</span>
                 <i class=" ft-minus" data-toggle="tooltip" data-placement="right"

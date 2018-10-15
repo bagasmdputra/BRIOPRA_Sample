@@ -1,10 +1,10 @@
-﻿<%@ Page Title="ManajemenInsiden" Language="C#" MasterPageFile="~/UI_Pages/Common/MasterPage/Site.Master" AutoEventWireup="true" CodeBehind="ManajemenInsiden.aspx.cs" Inherits="BRIOPRASample.ManajemenInsiden" %>
+﻿<%@ Page Title="Manajemen Insiden" Language="C#" MasterPageFile="~/UI_Pages/Common/MasterPage/Site.Master" AutoEventWireup="true" CodeBehind="ManajemenInsiden.aspx.cs" Inherits="BRIOPRASample.ManajemenInsiden" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="content-wrapper">
         <div class="content-header row">
             <div class="content-header-left col-md-6 col-12 mb-1">
-                <h3 class="content-header-title">Pencatatan Insiden</h3>
+                <h3 class="content-header-title">Manajemen Insiden</h3>
             </div>
             <div class="content-header-right breadcrumbs-right breadcrumbs-top col-md-6 col-12">
                 <div class="breadcrumb-wrapper col-12">

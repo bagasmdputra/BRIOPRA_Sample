@@ -341,16 +341,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="form-group col-md-6">
-                                                    <div class="form-group">
-                                                        <label for="deskripsiInsiden">
-                                                            Deskripsi Insiden/Loss Event :
-                                                            <span class="danger">*</span>
-                                                        </label>
-                                                        <textarea class="form-control required" id="deskripsiInsiden"
-                                                            rows="3"></textarea>
-                                                    </div>
-                                                </div>
+                                               
                                             </div>
                                             <div class="row">
                                                 <div class="form-group col-md-6">
@@ -374,10 +365,20 @@
                                             </div>
 
                                             <div class="row">
-                                                <div class="col-md-12">
+                                                <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label>Kronologi Kejadian :</label>
                                                         <textarea class="form-control" id="kronologiKejadian"
+                                                            rows="3"></textarea>
+                                                    </div>
+                                                </div>
+                                                 <div class="form-group col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="deskripsiInsiden">
+                                                            Deskripsi Insiden/Loss Event :
+                                                            <span class="danger">*</span>
+                                                        </label>
+                                                        <textarea class="form-control required" id="deskripsiInsiden"
                                                             rows="3"></textarea>
                                                     </div>
                                                 </div>
@@ -469,7 +470,7 @@
                                                     <div data-repeater-list="rtl-group">
                                                         <div data-repeater-item="data-repeater-item" class="box-shadow-1 padding-default">
                                                             <div class="row">
-                                                                <div class="form-group col-md-6">
+                                                                <div class="form-group col-md-3">
                                                                     <div class="form-group">
                                                                         <label for="nominalActual">
                                                                             Produk :
@@ -478,7 +479,7 @@
                                                                             id="nominalActual">
                                                                     </div>
                                                                 </div>
-                                                                <div class="form-group col-md-6">
+                                                                <div class="form-group col-md-3">
                                                                     <div class="form-group">
                                                                         <label for="tanggalJurnalActual">
                                                                             Tanggal :
@@ -487,9 +488,8 @@
                                                                             id="tanggalJurnalActual">
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-md-12">
+                                                            
+                                                                <div class="col-md-5">
                                                                     <div class="form-group">
                                                                         <label for="keteranganActual">
                                                                             Keterangan :
@@ -499,11 +499,10 @@
                                                                             rows="2"></textarea>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-md-12 form-group">
+                                                                <div class="col-md-1 form-group">
                                                                     <button type="button" class="btn btn-danger"
                                                                         data-repeater-delete>
-                                                                        <i class="ft-x"></i>
-                                                                        Hapus
+                                                                        x
                                                                     </button>
                                                                 </div>
                                                             </div>
@@ -512,18 +511,20 @@
                                                     <div class="col-md-12">
                                                         <button type="button" class="btn btn-primary"
                                                             data-repeater-create="data-repeater-create">
-                                                            <i class="icon-plus4"></i>Tambah
+                                                            Tambah
                                                         </button>
                                                     </div>
                                                 </div>
                                             </div>
+
+                                            <hr />
                                             <div>
                                                 <h4 class="margin-bottom-default">Potential Loss</h4>
                                                 <div class="repeater-default">
                                                     <div data-repeater-list="rtl-group">
                                                         <div data-repeater-item class="box-shadow-1 padding-default">
                                                             <div class="row">
-                                                                <div class="form-group col-md-6">
+                                                                <div class="form-group col-md-3">
                                                                     <div class="form-group">
                                                                         <label for="nominalPotential">
                                                                             Produk :
@@ -532,7 +533,7 @@
                                                                             id="nominalPotential">
                                                                     </div>
                                                                 </div>
-                                                                <div class="form-group col-md-6">
+                                                                <div class="form-group col-md-3">
                                                                     <div class="form-group">
                                                                         <label for="tanggalJurnalPotential">
                                                                             Tanggal :
@@ -541,9 +542,8 @@
                                                                             id="tanggalJurnalPotential">
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-md-12">
+                                                            
+                                                                <div class="col-md-5">
                                                                     <div class="form-group">
                                                                         <label for="keteranganPotential">
                                                                             Keterangan :
@@ -553,11 +553,10 @@
                                                                             rows="2"></textarea>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-md-12 form-group">
+                                                                <div class="col-md-1 form-group">
                                                                     <button type="button" class="btn btn-danger"
                                                                         data-repeater-delete="data-repeater-delete">
-                                                                        <i class="ft-x"></i>
-                                                                        Hapus
+                                                                        x
                                                                     </button>
                                                                 </div>
                                                             </div>
@@ -566,7 +565,7 @@
                                                     <div class="col-md-12">
                                                         <button type="button" class="btn btn-primary"
                                                             data-repeater-create="data-repeater-create">
-                                                            <i class="icon-plus4"></i>Tambah
+                                                            </i>Tambah
                                                         </button>
                                                     </div>
                                                 </div>
@@ -629,7 +628,7 @@
 
                                             </div>
                                         </fieldset>
-                                   </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -642,17 +641,17 @@
 </asp:Content>
 
 <asp:Content ID="Scripts" ContentPlaceHolderID="Scripts" runat="server">
-    
-    <script src="../../../../../Scripts/vendors/extensions/jquery.steps.min.js" ></script>
-    <script src="../../../../../Scripts/vendors/pickers/dateTime/moment-with-locales.min.js" ></script>
-    <script src="../../../../../Scripts/vendors/pickers/daterange/daterangepicker.js" ></script>
-    <script src="../../../../../Scripts/vendors/pickers/pickadate/picker.js" ></script>
-    <script src="../../../../../Scripts/vendors/forms/repeater/jquery.repeater.min.js" ></script>
-    <script src="../../../../../Scripts/vendors/pickers/pickadate/picker.date.js" ></script>
-    <script src="../../../../../Scripts/vendors/forms/validation/jquery.validate.min.js"  ></script>
 
-    <script src="../../../../../Scripts/scripts/forms/wizard-steps.js" ></script>
-    <script src="../../../../../Scripts/scripts/forms/form-repeater.js" ></script>
-    <script src="../../../../../Scripts/scripts/forms/checkbox-radio.js" ></script>
-    
+    <script src="../../../../../Scripts/vendors/extensions/jquery.steps.min.js"></script>
+    <script src="../../../../../Scripts/vendors/pickers/dateTime/moment-with-locales.min.js"></script>
+    <script src="../../../../../Scripts/vendors/pickers/daterange/daterangepicker.js"></script>
+    <script src="../../../../../Scripts/vendors/pickers/pickadate/picker.js"></script>
+    <script src="../../../../../Scripts/vendors/forms/repeater/jquery.repeater.min.js"></script>
+    <script src="../../../../../Scripts/vendors/pickers/pickadate/picker.date.js"></script>
+    <script src="../../../../../Scripts/vendors/forms/validation/jquery.validate.min.js"></script>
+
+    <script src="../../../../../Scripts/scripts/forms/wizard-steps.js"></script>
+    <script src="../../../../../Scripts/scripts/forms/form-repeater.js"></script>
+    <script src="../../../../../Scripts/scripts/forms/checkbox-radio.js"></script>
+
 </asp:Content>
