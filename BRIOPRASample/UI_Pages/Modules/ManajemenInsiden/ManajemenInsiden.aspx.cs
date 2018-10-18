@@ -20,6 +20,12 @@ namespace BRIOPRASample
 
         private void SeedAndBindDummyData()
         {
+            DataSet1 riskDataset = new DataSet1();
+
+            DataSet1TableAdapters.RISKTableAdapter riskTableAdapter = new DataSet1TableAdapters.RISKTableAdapter();
+
+            riskTableAdapter.Fill(riskDataset.RISK);
+
             var dummyInsidenGen = new Faker<Insiden>()
                 .RuleFor(e => e.IdInsiden, f => f.Random.Number(10000))
                 .RuleFor(e => e.Organisasi, f => f.Company.CompanyName())
@@ -31,8 +37,9 @@ namespace BRIOPRASample
                 .RuleFor(e => e.InsidenTerjadi, f => f.Lorem.Sentence(1))
                 .RuleFor(e => e.InsidenDicatat, f => f.Lorem.Lines(1));
 
-            IList<Insiden> list = dummyInsidenGen.Generate(100);
-            ListViewInsiden.DataSource = list;
+            //IList<Insiden> list = dummyInsidenGen.Generate(100);
+
+            ListViewInsiden.DataSource = riskTableAdapter.GetData();
             ListViewInsiden.DataBind();
         }
     }

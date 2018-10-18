@@ -181,20 +181,9 @@
                                         <table class="table table-striped table-bordered responsive dataex-res-controlled">
                                             <thead>
                                                 <tr>
-                                                    <th></th>
                                                     <th>No</th>
                                                     <th>Catat Insiden</th>
                                                     <th>Aksi</th>
-                                                    <th>No. Insiden</th>
-                                                    <th>Organisasi</th>
-                                                    <th>Insiden Terjadi</th>
-                                                    <th>Insiden Dicatat</th>
-                                                    <th>Deskripsi</th>
-                                                    <th>Finansial</th>
-                                                    <th>AP</th>
-                                                    <th>Status</th>
-                                                    <th>Level Saat Ini</th>
-                                                    <th>Pilih</th>
                                                     <th>Catat</th>
                                                 </tr>
                                             </thead>
@@ -226,19 +215,10 @@
                                                                     </button>
                                                                 </td>
                                                                 <td>
-                                                                    <%# Eval("IdInsiden") %>
+                                                                    <%# Eval("RiskID") %>
                                                                 </td>
-                                                                <td><%# Eval("Organisasi") %></td>
-                                                                <td><%# Eval("InsidenTerjadi") %></td>
-                                                                <td><%# Eval("InsidenDicatat") %></td>
-                                                                <td><%# Eval("Deskripsi") %></td>
-                                                                <td><%# Eval("Finansial") %></td>
-                                                                <td><%# Eval("AP") %></td>
-                                                                <td><%# Eval("Status") %></td>
-                                                                <td><%# Eval("LevelSaatIni") %></td>
-                                                                <td>-</td>
-                                                                <td>-</td>
-                                                            </tr>
+                                                                <td><%# Eval("Code") %></td>
+                                                                <td><%# Eval("Name") %></td>
                                                         </ItemTemplate>
                                                         <EmptyDataTemplate>
                                                             <table class="emptyTable" cellpadding="5" cellspacing="5">
