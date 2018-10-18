@@ -33,5 +33,16 @@ namespace BRIOPRASample.Properties {
                 return ((string)(this["OPRA_BRI2018ConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=briopratrial.database.windows.net;Initial Catalog=OPRA-BRI2018;User I" +
+            "D=briopra;Password=sharksharkadmin1234!!")]
+        public string OPRA_BRI2018ConnectionString1 {
+            get {
+                return ((string)(this["OPRA_BRI2018ConnectionString1"]));
+            }
+        }
     }
 }
