@@ -544,7 +544,7 @@
                                                 <div class="col-md-12">
                                                     <button type="button" class="btn btn-primary"
                                                         data-repeater-create="data-repeater-create">
-                                                        </i>Tambah
+                                                        Tambah
                                                     </button>
                                                 </div>
                                             </div>
@@ -614,11 +614,12 @@
                         </div>
                     </div>
                 </div>
+            </section>
         </div>
-        </section>
+        
 
     </div>
-    </div>
+    
 </asp:Content>
 
 <asp:Content ID="Scripts" ContentPlaceHolderID="Scripts" runat="server">
