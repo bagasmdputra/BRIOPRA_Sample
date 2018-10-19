@@ -2138,10 +2138,10 @@
     <Compile Include="UI_Pages\Modules\LiniBisnis\LiniBisnis.aspx.designer.cs">
       <DependentUpon>LiniBisnis.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DataSet1.Designer.cs">
+    <Compile Include="BRIOPRADataset.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DataSet1.xsd</DependentUpon>
+      <DependentUpon>BRIOPRADataset.xsd</DependentUpon>
     </Compile>
     <Compile Include="UI_Pages\Modules\ManajemenInsiden\ManajemenInsiden.aspx.cs">
       <DependentUpon>ManajemenInsiden.aspx</DependentUpon>
@@ -2175,16 +2175,16 @@
     <Content Include="Scripts\vendors\.DS_Store" />
     <Content Include="Scripts\vendors\tables\.DS_Store" />
     <Content Include="Scripts\vendors\tables\jsgrid\.DS_Store" />
-    <Content Include="DataSet1.xsc">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
+    <Content Include="BRIOPRADataset.xsc">
+      <DependentUpon>BRIOPRADataset.xsd</DependentUpon>
     </Content>
-    <None Include="DataSet1.xsd">
+    <None Include="BRIOPRADataset.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <LastGenOutput>BRIOPRADataset.Designer.cs</LastGenOutput>
     </None>
-    <Content Include="DataSet1.xss">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
+    <Content Include="BRIOPRADataset.xss">
+      <DependentUpon>BRIOPRADataset.xsd</DependentUpon>
     </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

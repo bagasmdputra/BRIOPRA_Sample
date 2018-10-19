@@ -20,9 +20,9 @@ namespace BRIOPRASample
 
         private void SeedAndBindDummyData()
         {
-            DataSet1 riskDataset = new DataSet1();
+            BRIOPRADataset riskDataset = new BRIOPRADataset();
 
-            DataSet1TableAdapters.RISKTableAdapter riskTableAdapter = new DataSet1TableAdapters.RISKTableAdapter();
+            BRIOPRADatasetTableAdapters.RISKTableAdapter riskTableAdapter = new BRIOPRADatasetTableAdapters.RISKTableAdapter();
 
             riskTableAdapter.Fill(riskDataset.RISK);
 
